@@ -15,3 +15,9 @@ STM32F411 discovery board contains bitstream for both MachXO3LF Starter kit and 
 
 Take note that Lattice Devices have default address of 0x40 at hardware default. This means, you have to update the address of one device before putting them in the I2C bus to avoid address collision. In this example, the I2C address of the MachXO3D is 0x08 and the MachXO3LF is left to be 0x40.
 
+This example uses different fucntions made for programming XO2/XO3 and XO3D. 
+![image](https://github.com/user-attachments/assets/969d937f-516a-4304-9b8b-d9a45235184f)
+
+For the XO2/XO3 internal flash programming, the arguments are the I2C_ADDRESS, the array to be programmed, and the length of the array to be programed while for XO3D an additional argument for CFG sector is needed.
+
+
