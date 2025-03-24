@@ -10,6 +10,7 @@ The set-up for this example is like below:
 
 
 STM32F411 discovery board contains bitstream for both MachXO3LF Starter kit and MachXO3D Breakout Board. We are able to fit two bitstreams by not including the blank bits in the bitstream after the comment *NOTE END CONFIG DATA*. We also do not have any contents in the UFM sector. In designs where UFM is used, all bits are needed to be programmed. This information is indicated in FPGA-TN-02055 Table 9.2:
+
 ![image](https://github.com/user-attachments/assets/e6fd72ea-ecd5-4e59-8079-ed1e5cad8806)
 
 Take note that Lattice Devices have default address of 0x40 at hardware default. This means, you have to update the address of one device before putting them in the I2C bus to avoid address collision. In this example, the I2C address of the MachXO3D is 0x08 and t he MachXO3LF is left to be 0x40.
