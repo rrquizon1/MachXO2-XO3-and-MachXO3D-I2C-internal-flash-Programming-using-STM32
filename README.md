@@ -34,3 +34,7 @@ This implementation only have lower consumption of flash and ram as we reduced t
 
 ![image](https://github.com/user-attachments/assets/919adb5f-58e9-4c4e-bbc0-6c3a6b068584)
 
+See sample Console Run below:
+![image](https://github.com/user-attachments/assets/cbca2fd6-553e-478c-8832-f076db1e4af5)
+
+
