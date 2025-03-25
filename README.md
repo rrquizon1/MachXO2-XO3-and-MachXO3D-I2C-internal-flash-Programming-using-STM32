@@ -30,4 +30,7 @@ This example uses different fucntions made for programming XO2/XO3 and XO3D.
 
 For the XO2/XO3 internal flash programming, the arguments are the I2C_ADDRESS, the array to be programmed, and the length of the array to be programed while for XO3D an additional argument for CFG sector is needed.
 
+This implementation only have lower consumption of flash and ram as we reduced the bitstream only to the relevant bits and did not program the UFM sector:
+
+![image](https://github.com/user-attachments/assets/919adb5f-58e9-4c4e-bbc0-6c3a6b068584)
 
