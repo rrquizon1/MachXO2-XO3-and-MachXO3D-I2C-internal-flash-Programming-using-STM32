@@ -15,6 +15,16 @@ STM32F411 discovery board contains bitstream for both MachXO3LF Starter kit and 
 
 Take note that Lattice Devices have default address of 0x40 at hardware default. This means, you have to update the address of one device before putting them in the I2C bus to avoid address collision. In this example, the I2C address of the MachXO3D is 0x08 and the MachXO3LF is left to be 0x40.
 
+To change the I2C Address of the MachXO3/XO3D, you have to instantiate the EFB IP and activate I2C Primary configuration like below:
+![image](https://github.com/user-attachments/assets/ec9c6b31-0d91-42d3-b10a-e46baae17d1d)
+
+![image](https://github.com/user-attachments/assets/e9699adf-33cb-4e73-b26f-cf659993d01f)
+
+Do not forget to port the i2c pins as inout pins of your top module:
+![image](https://github.com/user-attachments/assets/99871b34-12c0-428b-9b12-de67c4c9bd46)
+
+Generate your bitstream then program the feature rows. For MachXO3D, the feature row is in the .fea file while the MachXO3 feature row is in the .jed file.
+
 This example uses different fucntions made for programming XO2/XO3 and XO3D. 
 ![image](https://github.com/user-attachments/assets/969d937f-516a-4304-9b8b-d9a45235184f)
 
