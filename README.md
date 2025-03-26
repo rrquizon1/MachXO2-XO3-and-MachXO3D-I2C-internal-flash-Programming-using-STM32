@@ -25,7 +25,7 @@ Do not forget to port the i2c pins as inout pins of your top module:
 
 Generate your bitstream then program the feature rows. For MachXO3D, the feature row is in the .fea file while the MachXO3 feature row is in the .jed file.
 
-This example uses different fucntions made for programming XO2/XO3 and XO3D. 
+This example uses different functions made for programming XO2/XO3 and XO3D. 
 ![image](https://github.com/user-attachments/assets/969d937f-516a-4304-9b8b-d9a45235184f)
 
 For the XO2/XO3 internal flash programming, the arguments are the I2C_ADDRESS, the array to be programmed, and the length of the array to be programed while for XO3D an additional argument for CFG sector is needed.
