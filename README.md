@@ -28,13 +28,16 @@ Generate your bitstream then program the feature rows. For MachXO3D, the feature
 This example uses different functions made for programming XO2/XO3 and XO3D. 
 ![image](https://github.com/user-attachments/assets/969d937f-516a-4304-9b8b-d9a45235184f)
 
-For the XO2/XO3 internal flash programming, the arguments are the I2C_ADDRESS, the array to be programmed, and the length of the array to be programed while for XO3D an additional argument for CFG sector is needed.
+
+For the XO2/XO3 internal flash programming, the arguments are the I2C_ADDRESS, the array to be programmed, and the length of the array to be programed while for XO3D an additional argument for CFG sector is needed.Additionally, it is always a good practice to check the device ID of all devices in the bus before proceeding with the programming procedure.
 
 This implementation only have lower consumption of flash and ram as we reduced the bitstream only to the relevant bits and did not program the UFM sector:
 
 ![image](https://github.com/user-attachments/assets/919adb5f-58e9-4c4e-bbc0-6c3a6b068584)
 
 See sample Console Run below:
+![image](https://github.com/user-attachments/assets/c3f6d29c-62bd-42ba-a20e-29f9063cf559)
+
 ![image](https://github.com/user-attachments/assets/cbca2fd6-553e-478c-8832-f076db1e4af5)
 
 
