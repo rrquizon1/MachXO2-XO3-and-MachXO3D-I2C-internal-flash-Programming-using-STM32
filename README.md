@@ -27,7 +27,7 @@ To change the I2C Address of the MachXO3/XO3D, you have to instantiate the EFB I
 Do not forget to port the i2c pins as inout pins of your top module:
 ![image](https://github.com/user-attachments/assets/99871b34-12c0-428b-9b12-de67c4c9bd46)
 
-Generate your bitstream then program the feature rows. For MachXO3D, the feature row is in the .fea file while the MachXO3 feature row is in the .jed file.
+Generate your bitstream then program the feature rows via JTAG using Diamond Programmer. For MachXO3D, the feature row is in the .fea file while the MachXO3 feature row is in the .jed file.
 
 This example uses different functions made for programming XO2/XO3 and XO3D. 
 ![image](https://github.com/user-attachments/assets/969d937f-516a-4304-9b8b-d9a45235184f)
